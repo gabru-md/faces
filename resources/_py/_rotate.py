@@ -38,7 +38,8 @@ M[1, 2] += (nH / 2) - cY
 
 # perform the actual rotation and return the image
 _im = cv2.warpAffine(image, M, (nW, nH))
-
+# a new vairable is taken instead of the old one as it will then form 2 different copies
+# instead of forming a reference of the object or altering the object itself
 
 # now show the rotated image!
 
