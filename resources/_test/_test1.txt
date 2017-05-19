@@ -1,1 +1,1 @@
-
+_new = cv2.resize(image,(X,Y)) # X and Y are the new Width and Height for the resized image!
