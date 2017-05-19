@@ -17,7 +17,7 @@ os.chdir("PATH TO THE DIRECTORY")
 
 imagePath = "Path to image"
 
-cascPath = "NAME OF THE FILE"
+cascPath = "NAME OF THE FILE / XML CASCADE"
 
 # Reading the image file to create a frame object named 'image'
 image = cv2.imread(imagePath)
@@ -49,7 +49,17 @@ print "Faces Detected: {0}".format(len(faces))
 for (x,y,w,h) in faces:
     #print faces 
     #print "\n"
-    cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    # rather than starting from (x,y) to (x+w, y+h)
+    # the height and width of the rectangular container are tuned! so as to capture less of face!
+
+    # cv2.rectangle(img, pt1, pt2, color[, thickness[, lineType[, shift]]])
+       
+    # changes are done to top and bottom margins
+    # and changes have been done to left and right margins as well!
+    cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2) # 2 is the thickness of the line!
+      
+    # the changes in the coordinate were made just to get the facial features like eyes, nose, lips and 
+    # not the face as a whole object! Since the main purpose of the project is something else!
 
 # using cv2.imshow to show the image with detected faces on it!
 
