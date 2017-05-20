@@ -1,0 +1,933 @@
+
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+------------------------------LOG STARTS HERE-------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+# SOFTWARE USED : ENTHOUGHT CANOPY
+
+Welcome to Canopy's interactive data-analysis environment!
+Type '?' for more information.
+Python 2.7.11 | 64-bit | (default, Jun 11 2016, 11:33:47) [MSC v.1500 64 bit (AMD64)]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.1.2 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     40     #print "\n"
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+---> 42     cv2.circle(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),int(w/2))
+     43     #for (ex,ey,ew,eh) in eyes:
+     44      #   if ey < y + int(h*0.30):
+
+TypeError: Required argument 'color' (pos 4) not found 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     40     #print "\n"
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+---> 42     cv2.ellipse(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),int(w*0.6/2),int(h*0.7/2),0,360,(0,0,255),2)
+     43     #for (ex,ey,ew,eh) in eyes:
+     44      #   if ey < y + int(h*0.30):
+
+TypeError: ellipse() takes at most 5 arguments (8 given) 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     40     #print "\n"
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+---> 42     cv2.ellipse(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),(int(w*0.6/2),int(h*0.7/2)),0,360,(0,0,255),2)
+     43     #for (ex,ey,ew,eh) in eyes:
+     44      #   if ey < y + int(h*0.30):
+
+TypeError: ellipse() takes at most 5 arguments (7 given) 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     40     #print "\n"
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+---> 42     cv2.ellipse(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),(int(w*0.6/2),int(h*0.7/2)),0,360,(0,0,255),1,2)
+     43     #for (ex,ey,ew,eh) in eyes:
+     44      #   if ey < y + int(h*0.30):
+
+TypeError: ellipse() takes at most 5 arguments (8 given) 
+
+import cv2
+
+cv2.ellipse(img,(256,256),(100,50),0,0,180,255,-1)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-10-ef35dd69cc79> in <module>()
+----> 1 cv2.ellipse(img,(256,256),(100,50),0,0,180,255,-1)
+
+NameError: name 'img' is not defined 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+     42     #cv2.ellipse(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),(int(w*0.6/2),int(h*0.7/2)),0,360,(0,0,255),1,2)
+---> 43     cv2.ellipse(img,(256,256),(100,50),0,0,180,255,-1)
+     44     #for (ex,ey,ew,eh) in eyes:
+     45      #   if ey < y + int(h*0.30):
+
+NameError: name 'img' is not defined 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+     42     #cv2.ellipse(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),(int(w*0.6/2),int(h*0.7/2)),0,360,(0,0,255),1,2)
+---> 43     cv2.addweighted(image,0.8,cv2.ellipse(image,(120,160),(60,70),0,0,360,255,-1),0.2)
+     44     #for (ex,ey,ew,eh) in eyes:
+     45      #   if ey < y + int(h*0.30):
+
+AttributeError: 'module' object has no attribute 'addweighted' 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+     42     #cv2.ellipse(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),(int(w*0.6/2),int(h*0.7/2)),0,360,(0,0,255),1,2)
+---> 43     cv2.addWeighted(image,0.8,cv2.ellipse(image,(120,160),(60,70),0,0,360,255,-1),0.2)
+     44     #for (ex,ey,ew,eh) in eyes:
+     45      #   if ey < y + int(h*0.30):
+
+TypeError: Required argument 'gamma' (pos 5) not found 
+
+%run "C:\Users\Manish\Desktop\init.py"
+OpenCV Error: Sizes of input arguments do not match (The operation is neither 'array op array' (where arrays have the same size and the same number of channels), nor 'array op scalar', nor 'scalar op array') in cv::arithm_op, file C:\pisi\tmp\opencv-2.4.9-5\work\opencv-2.4.9\modules\core\src\arithm.cpp, line 1287
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+error                                     Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+     42     #cv2.ellipse(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),(int(w*0.6/2),int(h*0.7/2)),0,360,(0,0,255),1,2)
+---> 43     cv2.addWeighted(image,0.8,cv2.ellipse(image,(120,160),(60,70),0,0,360,255,-1),0.2,1)
+     44     #for (ex,ey,ew,eh) in eyes:
+     45      #   if ey < y + int(h*0.30):
+
+error: C:\pisi\tmp\opencv-2.4.9-5\work\opencv-2.4.9\modules\core\src\arithm.cpp:1287: error: (-209) The operation is neither 'array op array' (where arrays have the same size and the same number of channels), nor 'array op scalar', nor 'scalar op array' in function cv::arithm_op
+ 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     40     #print "\n"
+     41     cv2.rectangle(image,(x+int(w*0.15),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+---> 42     cv2.circle(image,(int(x+int(w*0.15)+x+int(w*0.80))/2,(y+int(h*0.15)+y+int(h*0.90))/2),(int(w*0.7/2),30),(0,0,255),2)
+     43     #for (ex,ey,ew,eh) in eyes:
+     44      #   if ey < y + int(h*0.30):
+
+TypeError: an integer is required 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 2
+Eyes Detected: 2
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 1
+Eyes Detected: 1
+0
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 1
+Eyes Detected: 1
+2
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 1
+Eyes Detected: 1
+2
+
+
+import cv2
+import sys
+import numpy as np
+import os
+
+imagePath = "te.jpg"
+eyePath = "haarcascade_eye.xml"
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+faceCascade = cv2.CascadeClassifier(cascPath)
+eyeCascade = cv2.CascadeClassifier(eyePath)
+image = cv2.imread(imagePath)
+#cv2.imshow('asda',image)
+gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+
+#cv2.imshow('asa',gray)
+
+faces = faceCascade.detectMultiScale(
+    gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+)
+
+eyes = eyeCascade.detectMultiScale(
+    gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+)
+print "faces detected: {0}".format(len(faces))
+print "Eyes Detected: {0}".format(len(faces))
+i = 0
+ep = 0
+for (x,y,w,h) in faces:
+    #print faces 
+    #print "\n"
+    cv2.rectangle(image,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    #cv2.circle(image,(int(x+int(w*0.18)+x+int(w*0.80))/2,(y+int(h*0.18)+y+int(h*0.90))/2),int(w*0.60/2),(0,0,255),2)
+    for (ex,ey,ew,eh) in eyes:
+        if ey < y + int(h*0.30):
+           ep = ep + 1
+           cv2.rectangle(image,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)      
+
+
+#print type(faces[0][0])
+cv2.imshow('FacesFound', image)
+#cv2.rectangle(overlay, (100, 200), (150, 300),(0, 0, 255), -1)
+print ep
+cv2.waitKey(0)
+
+#corp_im = image[150:172,188:210]
+
+
+
+#print "Corped Eye: "
+#corp_gray = cv2.cvtColor(corp_im,cv2.COLOR_BGR2GRAY)
+#cv2.imshow('sadasda',corp_gray)
+
+#print corp_gray
+
+faces detected: 1
+Eyes Detected: 1
+2
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+<ipython-input-35-85bd59561876> in <module>()
+     51 #cv2.rectangle(overlay, (100, 200), (150, 300),(0, 0, 255), -1)
+     52 print ep
+---> 53 cv2.waitKey(0)
+     54 
+     55 #corp_im = image[150:172,188:210]
+
+KeyboardInterrupt: 
+
+image
+Out[36]: 
+array([[[254, 254, 254],
+        [254, 254, 254],
+        [254, 254, 254],
+        ..., 
+        [242, 251, 254],
+        [242, 251, 254],
+        [242, 252, 252]],
+
+       [[253, 253, 253],
+        [254, 254, 254],
+        [253, 253, 253],
+        ..., 
+        [241, 250, 253],
+        [242, 251, 254],
+        [242, 252, 252]],
+
+       [[252, 252, 252],
+        [254, 254, 254],
+        [253, 253, 253],
+        ..., 
+        [241, 250, 253],
+        [242, 251, 254],
+        [243, 252, 255]],
+
+       ..., 
+       [[ 61,  72,  94],
+        [ 61,  72,  94],
+        [ 63,  70,  95],
+        ..., 
+        [ 96, 107, 134],
+        [114, 123, 150],
+        [112, 121, 148]],
+
+       [[ 60,  74,  93],
+        [ 59,  72,  94],
+        [ 60,  70,  94],
+        ..., 
+        [ 97, 108, 136],
+        [115, 124, 151],
+        [111, 120, 147]],
+
+       [[ 59,  73,  92],
+        [ 59,  73,  92],
+        [ 61,  71,  95],
+        ..., 
+        [101, 113, 141],
+        [112, 121, 148],
+        [107, 116, 143]]], dtype=uint8)
+
+import numpy as np
+import cv2
+
+# reading image using cv2.imread()
+
+#image = cv2.imread("PATH TO IMAGE")
+
+# grab the dimensions of the image and then determine the
+# center
+
+(h, w) = image.shape[:2]
+(cX, cY) = (w // 2, h // 2)
+
+# grab the rotation matrix (applying the negative of the
+# angle to rotate clockwise), then grab the sine and cosine
+# (i.e., the rotation components of the matrix)
+M = cv2.getRotationMatrix2D((cX, cY), 5, 1.0)
+cos = np.abs(M[0, 0])
+sin = np.abs(M[0, 1])
+
+# compute the new bounding dimensions of the image
+nW = int((h * sin) + (w * cos))
+nH = int((h * cos) + (w * sin))
+
+# adjust the rotation matrix to take into account translation
+M[0, 2] += (nW / 2) - cX
+M[1, 2] += (nH / 2) - cY
+
+# perform the actual rotation and return the image
+_im = cv2.warpAffine(image, M, (nW, nH))
+# a new vairable is taken instead of the old one as it will then form 2 different copies
+# instead of forming a reference of the object or altering the object itself
+
+# now show the rotated image!
+
+cv2.imshow('Rotated Image',_im)
+
+#END
+
+
+
+import cv2
+import sys
+import numpy as np
+import os
+
+#imagePath = "te.jpg"
+eyePath = "haarcascade_eye.xml"
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+faceCascade = cv2.CascadeClassifier(cascPath)
+eyeCascade = cv2.CascadeClassifier(eyePath)
+#image = cv2.imread(imagePath)
+#cv2.imshow('asda',image)
+gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+
+#cv2.imshow('asa',gray)
+
+faces = faceCascade.detectMultiScale(
+    gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+)
+
+eyes = eyeCascade.detectMultiScale(
+    gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+)
+print "faces detected: {0}".format(len(faces))
+print "Eyes Detected: {0}".format(len(faces))
+i = 0
+ep = 0
+for (x,y,w,h) in faces:
+    #print faces 
+    #print "\n"
+    cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    #cv2.circle(image,(int(x+int(w*0.18)+x+int(w*0.80))/2,(y+int(h*0.18)+y+int(h*0.90))/2),int(w*0.60/2),(0,0,255),2)
+    for (ex,ey,ew,eh) in eyes:
+        if ey < y + int(h*0.30):
+           ep = ep + 1
+           cv2.rectangle(_im,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)      
+
+
+#print type(faces[0][0])
+cv2.imshow('FacesFound', _im)
+#cv2.rectangle(overlay, (100, 200), (150, 300),(0, 0, 255), -1)
+print ep
+cv2.waitKey(0)
+
+#corp_im = image[150:172,188:210]
+
+
+
+#print "Corped Eye: "
+#corp_gray = cv2.cvtColor(corp_im,cv2.COLOR_BGR2GRAY)
+#cv2.imshow('sadasda',corp_gray)
+
+#print corp_gray
+
+faces detected: 2
+Eyes Detected: 2
+10
+Out[38]: -1
+
+cv2.imshow('a',_im)
+
+cv2.imshow()'',image
+  File "<ipython-input-40-ac6d8710ab91>", line 1
+    cv2.imshow()'',image
+                 ^
+SyntaxError: invalid syntax
+ 
+
+cv2.imshow('',image)
+
+image = cv2.imread('te.jpg')
+
+cv2.imshow('',image)
+
+def rotate(image,angle):
+    (h, w) = image.shape[:2]
+    (cX, cY) = (w // 2, h // 2)
+
+# grab the rotation matrix (applying the negative of the
+# angle to rotate clockwise), then grab the sine and cosine
+# (i.e., the rotation components of the matrix)
+    M = cv2.getRotationMatrix2D((cX, cY), angle, 1.0)
+    cos = np.abs(M[0, 0])
+    sin = np.abs(M[0, 1])
+
+# compute the new bounding dimensions of the image
+    nW = int((h * sin) + (w * cos))
+    nH = int((h * cos) + (w * sin))
+
+# adjust the rotation matrix to take into account translation
+    M[0, 2] += (nW / 2) - cX
+    M[1, 2] += (nH / 2) - cY
+
+# perform the actual rotation and return the image
+    _im = cv2.warpAffine(image, M, (nW, nH))
+# a new vairable is taken instead of the old one as it will then form 2 different copies
+# instead of forming a reference of the object or altering the object itself
+
+# now show the rotated image!
+
+    return _im
+
+
+rotate
+Out[45]: <function __main__.rotate>
+
+rotate()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-46-4d7b7c5ef902> in <module>()
+----> 1 rotate()
+
+TypeError: rotate() takes exactly 2 arguments (0 given) 
+
+_im = rotate()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-47-73bf0a0945ad> in <module>()
+----> 1 _im = rotate()
+
+TypeError: rotate() takes exactly 2 arguments (0 given) 
+
+_im = rotate(),
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-48-b62b0a20ed8c> in <module>()
+----> 1 _im = rotate(),
+
+TypeError: rotate() takes exactly 2 arguments (0 given) 
+
+def rotate(img,angle):
+    image = np.copy(image)
+    (h, w) = image.shape[:2]
+    (cX, cY) = (w // 2, h // 2)
+
+# grab the rotation matrix (applying the negative of the
+# angle to rotate clockwise), then grab the sine and cosine
+# (i.e., the rotation components of the matrix)
+    M = cv2.getRotationMatrix2D((cX, cY), angle, 1.0)
+    cos = np.abs(M[0, 0])
+    sin = np.abs(M[0, 1])
+
+# compute the new bounding dimensions of the image
+    nW = int((h * sin) + (w * cos))
+    nH = int((h * cos) + (w * sin))
+
+# adjust the rotation matrix to take into account translation
+    M[0, 2] += (nW / 2) - cX
+    M[1, 2] += (nH / 2) - cY
+
+# perform the actual rotation and return the image
+    _im = cv2.warpAffine(image, M, (nW, nH))
+# a new vairable is taken instead of the old one as it will then form 2 different copies
+# instead of forming a reference of the object or altering the object itself
+
+# now show the rotated image!
+
+    return _im
+
+
+for i in range(361):
+    _im = rotate(image,i*-1)
+    cv2.imshow('Rotated Image',_im)
+    cv2.waitKey(0)
+    
+---------------------------------------------------------------------------
+UnboundLocalError                         Traceback (most recent call last)
+<ipython-input-50-44268630600b> in <module>()
+      1 for i in range(361):
+----> 2     _im = rotate(image,i*-1)
+      3     cv2.imshow('Rotated Image',_im)
+      4     cv2.waitKey(0)
+      5 
+
+<ipython-input-49-9e3d78d7f214> in rotate(img, angle)
+      1 def rotate(img,angle):
+----> 2     image = np.copy(image)
+      3     (h, w) = image.shape[:2]
+      4     (cX, cY) = (w // 2, h // 2)
+      5 
+
+UnboundLocalError: local variable 'image' referenced before assignment 
+
+def rotate(img,angle):
+    image = np.copy(img)
+    (h, w) = image.shape[:2]
+    (cX, cY) = (w // 2, h // 2)
+
+# grab the rotation matrix (applying the negative of the
+# angle to rotate clockwise), then grab the sine and cosine
+# (i.e., the rotation components of the matrix)
+    M = cv2.getRotationMatrix2D((cX, cY), angle, 1.0)
+    cos = np.abs(M[0, 0])
+    sin = np.abs(M[0, 1])
+
+# compute the new bounding dimensions of the image
+    nW = int((h * sin) + (w * cos))
+    nH = int((h * cos) + (w * sin))
+
+# adjust the rotation matrix to take into account translation
+    M[0, 2] += (nW / 2) - cX
+    M[1, 2] += (nH / 2) - cY
+
+# perform the actual rotation and return the image
+    _im = cv2.warpAffine(image, M, (nW, nH))
+# a new vairable is taken instead of the old one as it will then form 2 different copies
+# instead of forming a reference of the object or altering the object itself
+
+# now show the rotated image!
+
+    return _im
+
+
+for i in range(361):
+    _im = rotate(image,i*-1)
+    cv2.imshow('Rotated Image',_im)
+    cv2.waitKey(0)
+    
+
+i
+Out[53]: 360
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(361):
+    _im = rotate(image,i*-1)
+    _gray = cv2.cvtColor(_im.cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-54-668334d2a888> in <module>()
+      3 for i in range(361):
+      4     _im = rotate(image,i*-1)
+----> 5     _gray = cv2.cvtColor(_im.cv2.COLOR_BGR2GRAY)
+      6     faces = faceCascade.detectMultiScale(
+      7     _gray,
+
+AttributeError: 'numpy.ndarray' object has no attribute 'cv2' 
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(361):
+    _im = rotate(image,i*-1)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-55-25682439101e> in <module>()
+     12     )
+     13     for (x,y,w,h) in faces:
+---> 14         cv2.rectangle(_im(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+     15     cv2.imshow('Rotated Image',_im)
+     16     if cv2.waitKey(0) == 27:
+
+TypeError: 'numpy.ndarray' object is not callable 
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(361):
+    _im = rotate(image,i*-1)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(3):
+    _im = rotate(image,i*-1)
+    cv2.imshow('hsdka',_im)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(3):
+    _im = rotate(image,i*-1)
+    cv2.imshow('hsdka',_im)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(361):
+    _im = rotate(image,i*-1)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+<ipython-input-59-767a4e4bc6c6> in <module>()
+      9     minNeighbors=1,
+     10     minSize=(15,15),
+---> 11     flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+     12     )
+     13     for (x,y,w,h) in faces:
+
+KeyboardInterrupt: 
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(361):
+    _im = rotate(image,i)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+<ipython-input-60-8805e479e08a> in <module>()
+      9     minNeighbors=1,
+     10     minSize=(15,15),
+---> 11     flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+     12     )
+     13     for (x,y,w,h) in faces:
+
+KeyboardInterrupt: 
+
+%run "C:\Users\Manish\Desktop\init.py"
+faces detected: 1
+Eyes Detected: 1
+2
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+C:\Users\Manish\Desktop\init.py in <module>()
+     51 #cv2.rectangle(overlay, (100, 200), (150, 300),(0, 0, 255), -1)
+     52 print ep
+---> 53 cv2.waitKey(0)
+     54 
+     55 #corp_im = image[150:172,188:210]
+
+KeyboardInterrupt: 
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(361):
+    _im = rotate(image,i)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+<ipython-input-62-8805e479e08a> in <module>()
+      9     minNeighbors=1,
+     10     minSize=(15,15),
+---> 11     flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+     12     )
+     13     for (x,y,w,h) in faces:
+
+KeyboardInterrupt: 
+
+image = cv2.imread('te.jpg')
+
+cascPath = "haarcascade_frontalface_default.xml"
+os.chdir('C:\Users\Manish\Desktop')
+for i in range(361):
+    _im = rotate(image,i)
+    _gray = cv2.cvtColor(_im,cv2.COLOR_BGR2GRAY)
+    faces = faceCascade.detectMultiScale(
+    _gray,
+    scaleFactor = 1.2,
+    minNeighbors=1,
+    minSize=(15,15),
+    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    )
+    for (x,y,w,h) in faces:
+        cv2.rectangle(_im,(x+int(w*0.18),y+int(h*0.15)),(x+int(w*0.80),y+int(h*0.90)),(0,255,0),2)
+    cv2.imshow('Rotated Image',_im)
+    if cv2.waitKey(0) == 27:
+        break
+    
+---------------------------------------------------------------------------
+KeyboardInterrupt                         Traceback (most recent call last)
+<ipython-input-64-8805e479e08a> in <module>()
+      9     minNeighbors=1,
+     10     minSize=(15,15),
+---> 11     flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+     12     )
+     13     for (x,y,w,h) in faces:
+
+KeyboardInterrupt: 
