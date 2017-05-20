@@ -2,10 +2,13 @@
 # MANISH DEVGAN
 # https://github.com/gabru-md
 
-# Program helps in detecting faces which are
-# tilted right or left! The detection is done by 
-# rotating the image and the trying to detect the 
-# potential faces in it!
+""" Program helps in detecting faces which are
+ tilted right or left! The detection is done by 
+ rotating the image and the trying to detect the 
+ potential faces in it!
+ this is just the manual version of the main program
+ the main program will be automated and will have better 
+ detection features """
 
 #BEGIN
 
