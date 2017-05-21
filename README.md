@@ -14,5 +14,5 @@ this is a project using opencv that will interchange faces
 
 # note
 
-remember to update it asap! :)
-and KEEP CHECKING [to-do.md](https://github.com/gabru-md/faces/blob/master/to-do.md) for any work!
+remember to update it asap! :)<br>
+and KEEP CHECKING <a href="https://github.com/gabru-md/faces/blob/master/to-do.md" target="_blank">to-do.md</a> for any work!
