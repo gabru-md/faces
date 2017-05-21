@@ -3,9 +3,9 @@
 ###### Update this File if any new idea pops up!
 ###### Or if the process to do the work is developed and only waiting to be coded right!
 
-### Content Updated : 20 May 2017
+### Content Initialised : 20 May 2017
 
-Check for Faces in Images !
+Check for Faces in Images !<br>
 Check for Faces in Images where Face is not straight, i.e., Face is tilted leftwards or rightwards.
 
 ### Updates
