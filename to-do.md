@@ -8,16 +8,19 @@
 Check for Faces in Images !
 Check for Faces in Images where Face is not straight, i.e., Face is tilted leftwards or rightwards.
 
-
+### Updates
+#### Dates
+ * 20 May 2017
+ * 21 May 2017
 ### How To Implement
 
 #### Check for Faces in Images where Face is not straight, i.e., Face is tilted leftwards or rightwards:
-  * Open an Image and Try to Detect the tiltes Face at first!
-  * It was just a try!
-  * Follow the steps below until the Face gets Accurately Detected!
-  * Rotate the Image Matrix through a certain 'theta'.
-  * Use cv2.getRotationMatrix2d() to rotate the matrix and store the output matrix in 'M'!
-  * Rotate the Image using the 'M' Matrix.
+  * Open an Image and Try to Detect the tiltes Face at first! <--- Done
+  * It was just a try! <--- Done
+  * Follow the steps below until the Face gets Accurately Detected! <--- Done
+  * Rotate the Image Matrix through a certain 'theta'. <--- Done
+  * Use cv2.getRotationMatrix2d() to rotate the matrix and store the output matrix in 'M'! <--- Done
+  * Rotate the Image using the 'M' Matrix. <--- Done till here
   * Check for EYES instead of Face!
   * It is because EYES can be used as a measure of straightness of face in the particular rotation of image!
   * Now create boxes / rectangle around the Eyes.
