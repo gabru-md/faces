@@ -1,5 +1,5 @@
 # faces
-:white_check_mark: An OpenCV project to interchange faces :arrows_counterclockwise:
+:white_check_mark: An OpenCV project :arrows_counterclockwise:
 
 
 Keeping it simple for now!
