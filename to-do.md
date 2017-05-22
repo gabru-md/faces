@@ -15,7 +15,7 @@ Check for Faces in Images where Face is not straight, i.e., Face is tilted leftw
 ### How To Implement
 
 #### Check for Faces in Images where Face is not straight, i.e., Face is tilted leftwards or rightwards:
-  * Open an Image and Try to Detect the tiltes Face at first! <--- Done
+  * Open an Image and Try to Detect the tilted Face at first! <--- Done
   * It was just a try! <--- Done
   * Follow the steps below until the Face gets Accurately Detected! <--- Done
   * Rotate the Image Matrix through a certain 'theta'. <--- Done
